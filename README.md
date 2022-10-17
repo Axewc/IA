@@ -1,2 +1,2 @@
 # IA
-Repositorio para tareas y poyectos d eInteligencia Artificial.
+Repositorio para tareas y poyectos de Inteligencia Artificial.
