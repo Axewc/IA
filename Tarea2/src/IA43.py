@@ -29,8 +29,18 @@ def main():
     entropy3 = shannon_entropy(data3, iterator=1)
     
     # Resultados
-    print("Entropy: %s" % entropy1)
-    print("Entropy: %s" % entropy2)
-    print("Entropy: %s" % entropy3)
+    print("Entropía de %s es : %s" % (data1, entropy1))
+    print("Entropía de %s es : %s" % (data2, entropy2))
+    print("Entropía de %s es : %s" % (data3, entropy3))
+    
+    # Imprime el mayor valor de entropía de los datos de prueba
+    print("Máxima entropía: %s" % max(entropy1, entropy2, entropy3))
+    
+    # Imprime la maxima entropía con su data correspondiente 
+    print("La cadena generada al azar es aquella con máxima entropía, es decir:")
+    print(data1)
+    print("La cadena con un patrón computable es aquella con menor entropía, es decir:")
+    print(data2)
+    
     
 main();
