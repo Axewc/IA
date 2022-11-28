@@ -18,15 +18,17 @@ def shannon_entropy(data, iterator = 1, base = 2):
 
 # Función main para probar el código
 def main():
-    # calculate entropy
+    # datos de prueba
     data1 = '010100110001110101001100011101010011000111'
     data2 = '000000000000000000000000000000000000000000'
     data3 = '010101010101101101110110010101010010111010'
     
+    # Prueba de la función
     entropy1 = shannon_entropy(data1, iterator=1)
     entropy2 = shannon_entropy(data2, iterator=1)
     entropy3 = shannon_entropy(data3, iterator=1)
-    # print result
+    
+    # Resultados
     print("Entropy: %s" % entropy1)
     print("Entropy: %s" % entropy2)
     print("Entropy: %s" % entropy3)
