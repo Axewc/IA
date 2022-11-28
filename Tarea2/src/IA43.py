@@ -22,6 +22,21 @@ def main():
     with open("data.txt", "r") as f:
         data = f.read()
     # calculate entropy
-    entropy = shannon_entropy(data, iterator = 1)
+    data1 = '010100110001110101001100011101010011000111'
+    data2 = '000000000000000000000000000000000000000000'
+    data3 = '010101010101101101110110010101010010111010'
+    
+    entropy = shannon_entropy(data, iterator=1)
+    entropy1 = shannon_entropy(data, iterator=1)
+    entropy2 = shannon_entropy(data2, iterator=1)
+    entropy3 = shannon_entropy(data3, iterator=1)
     # print result
     print("Entropy: %s" % entropy)
+    print("Entropy: %s" % entropy1)
+    print("Entropy: %s" % entropy2)
+    print("Entropy: %s" % entropy3)
+    
+main();
+# 010100110001110101001100011101010011000111
+# 000000000000000000000000000000000000000000
+# 010101010101101101110110010101010010111010
